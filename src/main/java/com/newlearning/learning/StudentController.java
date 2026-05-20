@@ -16,8 +16,6 @@ public class StudentController {
         public List<Student> getStudents() {
         return studentService.getStudentsDetails();
     }
-
-
     @PostMapping
     public StudentModel saveStudent(@RequestBody StudentModel studentModel){
         return studentService.putStudentDetails(studentModel);
