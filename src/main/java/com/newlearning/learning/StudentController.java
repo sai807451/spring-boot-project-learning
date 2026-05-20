@@ -23,8 +23,6 @@ public class StudentController {
         return studentService.putStudentDetails(studentModel);
     }
 
-
-
         @GetMapping
         public StudentModel getStudent ( @RequestParam int id){
             return studentService.getStudentDetail(id);
@@ -46,6 +44,5 @@ public class StudentController {
         public Student updateStudent (@RequestBody Student student) {
             return studentService.updateStudentDetails(student);
         }
-
 }
 
